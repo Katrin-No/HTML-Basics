@@ -2,10 +2,10 @@
 
 '''das hier ist im grauen Ksten'''
 
-***Fett kursiv
+***Fett kursiv***
 
-**Fett
+**Fett**
 
-*Kursiv
+*Kursiv*
 
 
