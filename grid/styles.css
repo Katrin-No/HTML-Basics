@@ -1,0 +1,223 @@
+html {
+  background-color: black;
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+}
+
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #377aa9;
+  padding: 1rem;
+}
+
+nav a {
+  color: white;
+  margin-left: 1.2rem;
+  text-decoration: none;
+}
+
+/**/
+.site-nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+
+  background: #333;
+  color: white;
+
+  box-shadow: 0 2px 6px rgba(51, 51, 51, 0.3);
+
+  padding: 0;
+  margin: 1rem 0;
+}
+
+
+/** 
+  * Liste gestalten 
+  */
+
+.site-nav-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 0;
+  margin: 0;
+}
+
+.site-nav-list li {
+  display: inline-block;
+  list-style: none;
+}
+
+
+/**
+  * Links gestalten 
+  */
+
+.site-nav-list a {
+  display: block;
+  text-decoration: none;
+
+  min-width: 72px;
+  min-width: 70px;
+  text-align: center;
+  background: #333;
+  color: white;
+
+  padding: 0.5rem 0.25rem;
+}
+
+.site-nav-list a.sie-sind-hier {
+  background: #666;
+  color: white;
+}
+
+.site-nav-list a:hover,
+.site-nav-list a:focus {
+  background: #666;
+  color: white;
+}
+
+.site-nav-list a:active {
+  background: #0b74b8;
+  color: white;
+}
+
+/**/
+
+h1 {
+  color: white;
+  margin-left: 1.2rem;
+}
+
+.einstieg {
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+
+img {
+  width: 100%;
+}
+
+.frames {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+
+.f-g {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+
+/* картинка на странице */
+.minimized {
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid #FFF;
+}
+
+.minimized:hover {
+  border: 1px solid #377aa9;
+}
+
+/* увеличенная картинка */
+#magnify {
+  display: none;
+  /* position: absolute; upd: 24.10.2016 */
+  top: 20% !important;
+  left: 24% !important;
+  position: fixed;
+  max-width: 900px;
+  height: auto;
+  z-index: 9999;
+}
+
+#magnify img {
+  width: 100%;
+}
+
+/* затемняющий фон */
+#overlay {
+  display: none;
+  background: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  z-index: 9990;
+}
+
+/* кнопка закрытия */
+#close-popup {
+  width: 30px;
+  height: 30px;
+  background: #FFFFFF;
+  border: 1px solid #AFAFAF;
+  border-radius: 15px;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+#close-popup i {
+  width: 30px;
+  height: 30px;
+  background: url(https://codernote.ru/files/cross.png) no-repeat center center;
+  background-size: 16px 16px;
+  display: block;
+}
+
+@keyframes rota {
+  25% {
+    transform: rotate(360deg);
+  }
+}
+
+#close-popup:hover {
+  animation: rota 4s infinite normal;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+/*end of import*/
+
+.btn-position {
+  position: fixed;
+  right: 23px;
+  bottom: 23px;
+  padding-top: 15px;
+  margin-bottom: 0;
+  z-index: 997;
+}
+
+.mbtn {
+  display: inline-block;
+  text-align: center;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  border-radius: 2.25rem;
+  color: #fff;
+  background-color: #377aa9;
+  border-color: #377aa9;
+  width: 3.5rem;
+  min-width: 3.5rem;
+  height: 3.5rem;
+  box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, .12), 0 1px 1px 0 rgba(0, 0, 0, .26);
+}
+
+.mbtn:hover {
+  background-color: #539dd1;
+  border-color: #539dd1;
+  color: #f8f8f8
+}
