@@ -1,4 +1,4 @@
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -7,7 +7,7 @@ body {
 }
 
 #girl {
-    width: 100%;    
+    width: 100%;
     margin-bottom: 6rem;
 }
 
@@ -52,9 +52,8 @@ li h1 {
 }
 
 .about-me {
-    
-    border-style:  solid;
-    border-color:  #FF5722;
+    border-style: solid;
+    border-color: #FF5722;
     border-radius: 2rem;
     width: 6rem;
     text-align: center;
@@ -64,12 +63,13 @@ li h1 {
 
 .about-me:hover {
     background-color: red;
-} 
+}
 
-.about-me a{
+.about-me a {
     color: white;
     text-decoration: none;
 }
+
 /* ---------------------------------------------------- intro END ---------------------------------------------------- */
 
 main {
@@ -78,7 +78,9 @@ main {
 }
 
 /* ---------------------------------------------------- paragraph ABOUT ME ---------------------------------------------------- */
-#p-about-me, .images4, .flyer {
+#p-about-me,
+.images4,
+.flyer {
     display: flex;
 }
 
@@ -86,11 +88,11 @@ main {
     width: 50%;
 }
 
-#pink{
+#pink {
     max-width: 100%;
 }
 
-.grey{
+.grey {
     max-width: 25%;
     position: absolute;
     left: 10.5rem;
@@ -101,7 +103,7 @@ main {
     width: 50%;
     margin-left: 4rem;
     padding: 4rem;
-    
+
 }
 
 .text h1 {
@@ -109,14 +111,15 @@ main {
     font-family: 'Itim', cursive;
     margin-top: 0;
 }
+
 /* ---------------------------------------------------- paragraph PORTFOLIO ---------------------------------------------------- */
-#portfolio{
+#portfolio {
     margin-top: 6rem;
     margin-bottom: 6rem;
-    width:100%
+    width: 100%
 }
 
-#portfolio p{
+#portfolio p {
     text-align: center;
     margin-bottom: 0;
 }
@@ -125,21 +128,20 @@ main {
     max-width: 224px;
 }
 
-.images4{
+.images4 {
     max-width: 1098px;
 }
 
-
-.logos img{
+.logos img {
     max-width: 350px;
 }
 
-.flyer img{
-    max-width: 350px;
+.flyer img {
+    width: 50%;
     margin-left: 2rem;
 }
 
-#pink2{
+#pink2 {
     max-width: 103.5%;
     margin-bottom: 6rem;
 }
@@ -148,50 +150,50 @@ main {
 
 .flip-container {
     perspective: 1000;
-  }
-  
-  .flip-container:hover .flipper,
-  .flip-container.hover .flipper {
+}
+
+.flip-container:hover .flipper,
+.flip-container.hover .flipper {
     transform: rotateY(180deg);
-  }
-  
-  .flip-container,
-  .front,
-  .back {
+}
+
+.flip-container,
+.front,
+.back {
     width: 350px;
     height: 350px;
-  
+
     background-color: blueviolet;
     color: wheat;
-  }
-  
-  .flipper {
+}
+
+.flipper {
     transition: 0.6s;
     transform-style: preserve-3d;
-  
+
     position: relative;
-  }
-  
-  .front,
-  .back {
+}
+
+.front,
+.back {
     backface-visibility: hidden;
-  
+
     position: absolute;
     top: 0;
     left: 0;
-  }
-  
-  .front {
+}
+
+.front {
     z-index: 2;
-  }
-  
-  .back {
+}
+
+.back {
     transform: rotateY(180deg);
     align-items: center;
     justify-content: center;
     display: flex;
     font-size: xx-large;
-  }
+}
 
 /* ---------------------------------------------------- Footer ---------------------------------------------------- */
 footer {
@@ -217,18 +219,18 @@ footer h1 {
     margin-bottom: 0;
 }
 
-.icons-text{
+.icons-text {
     display: flex;
     align-items: center;
 }
 
-.icons{
+.icons {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.f-info{
+.f-info {
     display: flex;
     flex-direction: column;
 }
@@ -239,11 +241,11 @@ footer h1 {
     padding: 0.8rem;
 }
 
-.polosa{
+.polosa {
     background-color: #f342ab;
     display: flex;
     justify-content: center;
-    color:white
+    color: white
 }
 
 /* ---------------------------------------------------- Back on top ---------------------------------------------------- */
@@ -260,32 +262,32 @@ footer h1 {
     min-width: 3.5rem;
     height: 3.5rem;
     box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, .12), 0 1px 1px 0 rgba(0, 0, 0, .26);
-  }
-  
-  .mbtn:hover {
+}
+
+.mbtn:hover {
     background-color: #e47ab6;
-    border-color: #e47ab68;
-    color: #f8f8f8
-  }
-  
-  .btn-position {
+    border-color: #e47ab6;
+    color: #f8f8f8;
+}
+
+.btn-position {
     position: fixed;
     right: 23px;
     bottom: 23px;
     padding-top: 15px;
     margin-bottom: 0;
     z-index: 997;
-  }
+}
 
-  .top{
-      padding:0;
-      margin:0;
-   }
+.top {
+    padding: 0;
+    margin: 0;
+}
 
 
 
-@media (max-width: 1252px){
-    .text p{
+@media (max-width: 1252px) {
+    .text p {
         font-size: 1.5rem;
     }
 }
