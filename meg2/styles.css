@@ -8,9 +8,8 @@ body {
 
 #girl {
     width: 100%;
-    margin-bottom: 6rem;
+    /*margin-bottom: 6rem;*/
 }
-
 
 nav {
     margin-top: 1rem;
@@ -18,15 +17,18 @@ nav {
     position: absolute;
     top: 0;
     right: 2rem;
+
+    display: flex;
+    width: 28%;
 }
 
 nav a {
     color: white;
     text-decoration: none;
     font-family: 'Itim', cursive;
-    margin: 1.7rem;
-}
 
+    margin: auto
+}
 
 /* ---------------------------------------------------- intro ---------------------------------------------------- */
 .intro {
@@ -78,7 +80,11 @@ main {
 }
 
 /* ---------------------------------------------------- paragraph ABOUT ME ---------------------------------------------------- */
-#p-about-me,
+#p-about-me {
+    height: 6rem;
+}
+
+.p-about-me,
 .images4,
 .flyer {
     display: flex;
@@ -103,7 +109,6 @@ main {
     width: 50%;
     margin-left: 4rem;
     padding: 4rem;
-
 }
 
 .text h1 {
@@ -114,8 +119,7 @@ main {
 
 /* ---------------------------------------------------- paragraph PORTFOLIO ---------------------------------------------------- */
 #portfolio {
-    margin-top: 6rem;
-    margin-bottom: 6rem;
+    margin: 6rem 0;
     width: 100%
 }
 
@@ -124,8 +128,10 @@ main {
     margin-bottom: 0;
 }
 
-.text2 {
-    max-width: 224px;
+.flex-column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .images4 {
@@ -142,57 +148,9 @@ main {
 }
 
 #pink2 {
-    max-width: 103.5%;
+    max-width: 100%;
+    /*103.5%*/
     margin-bottom: 6rem;
-}
-
-/* ---------------------------------------------------- Flipper ---------------------------------------------------- */
-
-.flip-container {
-    perspective: 1000;
-}
-
-.flip-container:hover .flipper,
-.flip-container.hover .flipper {
-    transform: rotateY(180deg);
-}
-
-.flip-container,
-.front,
-.back {
-    width: 350px;
-    height: 350px;
-
-    background-color: blueviolet;
-    color: wheat;
-}
-
-.flipper {
-    transition: 0.6s;
-    transform-style: preserve-3d;
-
-    position: relative;
-}
-
-.front,
-.back {
-    backface-visibility: hidden;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.front {
-    z-index: 2;
-}
-
-.back {
-    transform: rotateY(180deg);
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    font-size: xx-large;
 }
 
 /* ---------------------------------------------------- Footer ---------------------------------------------------- */
@@ -208,25 +166,16 @@ footer {
 footer h1 {
     color: #FF5722;
     font-family: 'Itim', cursive;
-    margin-top: 0;
-    margin-left: 1rem;
-    margin-bottom: 0;
+    margin: 0 0 0 1rem;
     padding-bottom: 0.5rem;
 }
 
 .contact {
-    margin-top: 1.5rem;
-    margin-bottom: 0;
+    margin: 1.5rem 0 0 0;
 }
 
 .icons-text {
     display: flex;
-    align-items: center;
-}
-
-.icons {
-    display: flex;
-    flex-direction: column;
     align-items: center;
 }
 
@@ -248,43 +197,7 @@ footer h1 {
     color: white
 }
 
-/* ---------------------------------------------------- Back on top ---------------------------------------------------- */
-.mbtn {
-    display: inline-block;
-    text-align: center;
-    border: 1px solid transparent;
-    padding: .375rem .75rem;
-    border-radius: 2.25rem;
-    color: #fff;
-    background-color: #f791cb;
-    border-color: #f791cb;
-    width: 3.5rem;
-    min-width: 3.5rem;
-    height: 3.5rem;
-    box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, .12), 0 1px 1px 0 rgba(0, 0, 0, .26);
-}
-
-.mbtn:hover {
-    background-color: #e47ab6;
-    border-color: #e47ab6;
-    color: #f8f8f8;
-}
-
-.btn-position {
-    position: fixed;
-    right: 23px;
-    bottom: 23px;
-    padding-top: 15px;
-    margin-bottom: 0;
-    z-index: 997;
-}
-
-.top {
-    padding: 0;
-    margin: 0;
-}
-
-
+/* ---------------------------------------------------- Media Querys ---------------------------------------------------- */
 
 @media (max-width: 1252px) {
     .text p {
